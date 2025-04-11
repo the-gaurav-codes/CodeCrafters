@@ -1,93 +1,115 @@
-# CodeCrafters
+# SocialFocus - Take Control of Your Social Media Usage
 
-🌐 SocialFocus – A Digital Wellbeing Tracker (Chrome Extension)
-Scroll Less. Live More. ✨
 
-SocialFocus is a lightweight, user-friendly Chrome extension that helps you track and control the time you spend on social media. It empowers you to develop healthier online habits and take back control of your time — one scroll at a time.
+## Developed by **CODECRAFTERS**
 
-🚀 Features
+A Chrome extension that helps users track and manage their time spent on social media platforms.
 
-⏳ Real-time tracking of social media usage (Facebook, Instagram, YouTube, WhatsApp Web, Twitter/X)
+---
 
-📊 Beautiful popup dashboard with daily time and usage charts
+## Meet the Team
 
-🔔 Smart notifications when you're over your time limit
+- **GAURAV** (Team Leader) 
+- **ISHA** 
+- **BHOOMI** 
 
-💬 Motivational quotes while you scroll
+---
 
-🎯 Daily goal setting and streak tracking
+## About SocialFocus
 
-🎨 Clean, dark/light mode UI with emojis and animations
+Have you ever lost track of time scrolling through your social media feeds? We certainly have. That's why we created SocialFocus - a simple yet powerful tool to help you be more mindful of your online habits.
 
-⚙️ Custom settings for time limits and quote toggles
+SocialFocus tracks the time you spend on popular social media platforms like Facebook, Instagram, and YouTube. It provides a clean, easy-to-understand interface that shows your daily usage statistics along with motivational quotes to encourage healthier browsing habits.
 
-🧠 Privacy-first – all data stays in your browser (localStorage only)
+### Key Features
 
-📁 File Structure
+- **Automatic Time Tracking**: Precisely monitors time spent on Facebook, Instagram, and YouTube
+- **Daily Statistics**: Shows total time and breakdown by platform
+- **Modern UI**: Clean and intuitive interface with smooth animations
+- **Motivational Quotes**: Random inspirational quotes to keep you motivated
+- **Daily Reset**: Stats reset at midnight to give you a fresh start each day
+- **Manual Reset Option**: Reset your stats anytime with a single click
 
-Here's a breakdown of the main project files:
+## Screenshots
 
-socialfocus-extension/
-├── manifest.json → Chrome extension metadata (v3)
-├── background.js → Background logic (tab detection, timers)
-├── content.js → Content script (if needed later)
-├── popup.html → Main UI popup
-├── popup.js → JS logic for popup
-├── options.html → Settings/configuration page
-├── options.js → JS logic for options page
-├── styles.css → TailwindCSS styles
-├── quotes.js → List of motivational quotes
-└── icons/ → Extension icons (128x128, 48x48, etc.)
+*![image](https://github.com/user-attachments/assets/0b16881a-8919-4477-afd5-e79ee7c34b23)
+*
 
-📦 Installation (For Local Testing)
+## Technical Details
 
-Download or clone this repository:
-git clone https://github.com/your-username/socialfocus-extension.git
+SocialFocus is built using web technologies:
 
-Open Chrome and go to: chrome://extensions/
+- **HTML/CSS**: For the popup interface and styling
+- **JavaScript**: For time tracking logic and user interactions
+- **Chrome Extension API**: For tab monitoring and data persistence
+- **Manifest V3**: Latest extension manifest version for better performance and security
 
-Enable “Developer Mode” (top right corner)
+## Installation
 
-Click “Load Unpacked” and select the socialfocus-extension/ folder
+### For Users
+1. Download the extension from the Chrome Web Store (coming soon)
+2. Click "Add to Chrome" to install
+3. Click the SocialFocus icon in your toolbar to view your statistics
 
-The SocialFocus icon will now appear in your Chrome toolbar!
+### For Developers
+1. Clone this repository or download the ZIP file
+2. Open Chrome and navigate to `chrome://extensions/`
+3. Enable "Developer mode" by toggling the switch in the top-right corner
+4. Click "Load unpacked" and select the SocialFocus folder
+5. The extension should now appear in your extensions list
 
-🛠️ Tech Stack
+## File Structure
 
-HTML + Tailwind CSS
+```
+SocialFocus/
+│
+├── manifest.json       # Extension configuration file
+├── background.js       # Background script for time tracking
+├── popup.html          # HTML for the popup interface
+├── popup.css           # Styles for the popup interface
+├── popup.js            # JavaScript for the popup functionality
+│
+└── icons/              # Folder containing all icons
+    ├── icon16.png      # Extension icon (16x16 pixels)
+    ├── icon48.png      # Extension icon (48x48 pixels)
+    ├── icon128.png     # Extension icon (128x128 pixels)
+    └── logo.png        # Logo image shown in the popup
+```
 
-JavaScript
+## How It Works
 
-Chart.js (for usage visualization)
+1. The background script continuously monitors tab activity
+2. When a tracked site is detected, the timer starts
+3. Time data is stored locally in your browser
+4. The popup displays your usage statistics when clicked
+5. Stats automatically reset at midnight for fresh daily tracking
 
-Chrome Extension APIs (tabs, storage, notifications)
+## Future Enhancements
 
-LocalStorage / chrome.storage
+We're not stopping here! Here are some features we're planning to add:
 
-🔐 Permissions Used
+- Custom time limits and alerts
+- Weekly and monthly usage reports
+- Support for additional social media platforms
+- Theme customization options
+- Data export capabilities
 
-tabs – to detect active websites
+## Privacy
 
-storage – to save usage data & settings
+SocialFocus respects your privacy. All data is stored locally on your device and is never transmitted to external servers. We only request the minimum permissions necessary for the extension to function properly.
 
-notifications – to show alerts when you exceed time limits
+## Contributing
 
-host_permissions – access to social media sites to track usage
+We welcome contributions! If you have ideas for improvements or bug fixes, please:
 
-📸 Screenshots (Coming Soon!)
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
 
-Popup dashboard view
+## Feedback
 
-Chart summary
+This is our first Chrome extension, and we'd love to hear your thoughts! Please reach out with any suggestions or issues.
 
-Motivational quote UI
+---
 
-Settings page
-
-✨ Inspiration
-
-Inspired by apps like Forest and StayFocusd, SocialFocus aims to help people — especially students and developers — maintain focus and achieve better time control without sacrificing fun.
-
-📃 License
-
-This project is open-source and available under the MIT License.
+Created with ❤️ by **CODECRAFTERS** during our Web Development Hackathon, 2025.
