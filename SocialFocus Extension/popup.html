@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocialFocus</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="icons/logo.png" alt="SocialFocus Logo" class="logo-img">
+        <h1>SocialFocus</h1>
+      </div>
+      <button id="resetBtn" title="Reset Stats">
+        <i class="fas fa-redo-alt"></i>
+      </button>
+    </header>
+
+    <div class="section summary">
+      <h2>Today's Usage</h2>
+      <div class="total-time">
+        <span id="totalHours">0</span>h <span id="totalMinutes">0</span>m
+      </div>
+    </div>
+
+    <div class="section sites">
+      <h2>Top Sites</h2>
+      <div id="sitesList" class="sites-list">
+      </div>
+    </div>
+
+    <div class="section quote">
+      <i class="fas fa-quote-left"></i>
+      <p id="motivationalQuote">The key is not to prioritize what's on your schedule, but to schedule your priorities.</p>
+      <div class="quote-author">- Stephen Covey</div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
